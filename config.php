@@ -1,0 +1,35 @@
+<?php
+
+$host="localhost";
+$user="root";
+$password="";
+$sub_folder="/";
+$path=$_SERVER['DOCUMENT_ROOT']."/".$sub_folder;
+
+$PROJECT=array(
+	"database"=>array(
+		"v1"=>array(
+				"developer_db_name"=>"test1",
+				"db_name"=>"test1",
+				"db_host"=>$host,
+				"db_user"=>$user,
+				"db_password"=>$password,
+				"mode"=>"devlpoer"
+			)
+		),
+	"android"=>array(
+		"google_key"=>"",
+		),
+	"ios"=>array(
+		"v1"=>array(
+			"ios_dev_pemfile_path"=>$path."resources/pemfile/",
+			"ios_pro_pemfile_path"=>$path."resources/pemfile/",
+			"ios_dev_pem_password"=>"",
+			"ios_pro_pem_password"=>""
+			)
+		),	
+	"mail_template_path"=>$path."resources/mail/",		
+	"folder"=>array(
+		"sub_folder"=>$sub_folder,
+		),
+);
